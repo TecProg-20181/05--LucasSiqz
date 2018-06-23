@@ -24,7 +24,7 @@ class TestDiskSpaceMethods(unittest.TestCase):
         self.assertEqual(diskspace.bytes_to_readable(blocksMb), '256.00Mb')
         self.assertEqual(diskspace.bytes_to_readable(blocksGb), '512.00Gb')
 
-    def testPrintTree(self):
+    def test_print_tree(self):
         path = '/home/Documentos'
         total_size = 2
         file_tree_node = {'print_size': '100.00Kb',
