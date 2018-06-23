@@ -1,8 +1,6 @@
 import unittest
 import diskspace
-import os
 import subprocess
-import re
 import sys
 import StringIO
 
