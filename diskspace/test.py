@@ -41,6 +41,9 @@ class TestDiskSpaceMethods(unittest.TestCase):
         sys.stdout = sys.__stdout__
         self.assertEqual(result, captured.getvalue())
 
+    def test_show_space_list(self):
+        self.assertIsNone(diskspace.show_space_list(directory = '.', depth = 0, order=True))
+
 
 if __name__ == '__main__':
     unittest.main()
